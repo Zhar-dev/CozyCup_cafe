@@ -27,6 +27,10 @@
         }
 
         section {
+            vertical-align: middle;
+            display: inline-block;
+            height: 400px;
+            text-align: center;
             margin: 20px;
             padding: 20px;
             background-color: #fff;
@@ -39,6 +43,16 @@
             flex-direction: column;
             max-width: 400px;
             margin: auto;
+        }
+
+        .con1, .con2 {
+            display: inline-block;
+            width: 676px;
+            flex-direction: row;
+        }
+
+        .map {
+            display: block;
         }
 
         label {
@@ -81,20 +95,19 @@
     </header>
 
     <nav>
-        <a href="#">Home</a> | 
+        <a href="Homepage.html">Home</a> | 
         <a href="#">Menu</a> | 
-        <a href="#">About Us</a> | 
-        <a href="#">Contact</a>
+        <a href="#">About Us</a>  |
     </nav>
 
-    <section>
+    <section class="con1">
         <h2>Contact Information</h2>
         <p><strong>Address:</strong> 123 Café Street, Tiniguiban, PPC</p>
         <p><strong>Phone:</strong> (123) 456-7890</p>
         <p><strong>Email:</strong> drinkat@cafecity.com</p>
     </section>
 
-    <section>
+    <section class="con2">
         <h2>Contact Form</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
@@ -110,7 +123,7 @@
         </form>
     </section>
 
-    <section>
+    <section class="map">
         <h2>Map</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4812.813738182419!2d118.73766807937194!3d9.777750503112898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1708385692595!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
