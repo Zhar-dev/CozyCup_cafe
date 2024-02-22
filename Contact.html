@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Poppins;
+            margin: 0;
+            padding: 0;
+            background-color: #ff9658;
+        }
+
+        header {
+            background-color: #ff9658;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #ffffff;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            vertical-align: middle;
+            display: inline-block;
+            height: 400px;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .con1, .con2 {
+            display: inline-block;
+            width: 676px;
+            flex-direction: row;
+        }
+
+        .map {
+            display: block;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            margin-bottom: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        img {
+            width: 140px;
+        }
+
+        .link {
+            width: 30px;
+            margin-left: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(160, 160, 160);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Café Contact</h1>
+    </header>
+
+    <nav>
+        <a href="Homepage.html">Home</a> | 
+        <a href="Menu page.html">Menu</a> | 
+        <a href="About us.html">About Us</a>  |
+    </nav>
+
+    <section class="con1">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Café Street, Tiniguiban, PPC</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> drinkat@cafecity.com</p>
+    </section>
+
+    <section class="con2">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section class="map">
+        <h2>Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4812.813738182419!2d118.73766807937194!3d9.777750503112898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1708385692595!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Visit our Page</p>
+            <div class="social-icons">
+                <a href="facebook.com"><img class="link" src="facebook.png" alt="Facebook"></a>
+                <a href="twitter.com"><img class="link" src="twitter.png" alt="Twitter"></a>
+                <a href="instagram.com"><img class="link" src="instagram.png" alt="Instagram"></a>
+            </div>
+            <p><b>QUICK LINKS</b></p>
+            <a href="Homepage.html">Home |</a>
+                <a href="Menu page.html">Menu |</a>
+                <a href="Contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
