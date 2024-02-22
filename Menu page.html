@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <style>
+                body {
+            font-family: 'Poppins';
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-image: url(bg.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: #ff9658;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 6px;
+            margin: 0 24px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .main-content {
+            margin-top: 180px;
+            text-shadow: 0px 0px 18px #000000;
+            text-align: left;
+            margin-left: 70px;
+            width: 440px;
+            margin-bottom: 100px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 600;
+            margin-top: 5%
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logos {
+            width: 30px;
+            margin-right: 1000px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .featured-products {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .product {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product img {
+            width: 300px; /* Adjust image width */
+            margin-bottom: 10px; /* Add margin to separate image from text */
+        }
+
+        .product strong {
+            font-size: 18px; /* Increase font size of product name */
+            margin-bottom: 5px; /* Add margin below product name */
+        }
+
+        .product em {
+            font-size: 14px;
+            color: gold;
+        }
+
+        .product p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        img {
+            width: 140px;
+        }
+
+        .link {
+            width: 30px;
+            margin-left: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Café</h1>
+    </header>
+    <nav>
+        <div class="logo">
+            <img class="logos" src="coffee-cup.png" alt="">
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section id="coffee-menu">
+        <h2>Coffee Menu</h2>
+        <div class="featured-products">
+            <ul>
+                <li class="product">
+                    <img src="one.png" alt="">
+                    <strong>Espresso</strong><br><em>PHP 105.00</em><br>Intense, concentrated coffee served in a small cup.<br>
+                </li>
+                <li class="product">
+                    <img src="four.png" alt="">
+                    <strong>Americano</strong><br><em>PHP 95.00</em><br>A shot of espresso diluted with hot water, resulting in a milder flavor.<br>
+                </li>
+                <li class="product">
+                    <img src="two.png" alt="">
+                    <strong>Cappuccino</strong><br><em>PHP 115.00</em><br>Equal parts espresso, steamed milk, and milk foam.<br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="pastry-menu">
+        <h2>Pastry Menu</h2>
+        <div class="featured-products">
+            <ul>
+                <li class="product">
+                    <img src="three.png" alt="Chocolate Croissant">
+                    <strong>Chocolate Croissant</strong><br><em>PHP 45.00</em><br>A buttery, flaky pastry filled with rich chocolate<br>
+                </li>
+                <li class="product">
+                    <img src="six.png" alt="Muffin">
+                    <strong>Muffin</strong><br><em>PHP 35.00</em><br>Classic breakfast pastry, available in various flavors<br>
+                </li>
+                <li class="product">
+                    <img src="five.png" alt="Mango cake">
+                    <strong>Mango cake</strong><br><em>PHP 55.00</em><br>A delicious cake infused with fresh mango flavors, topped with mango glaze<br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Visit our Page</p>
+            <div class="social-icons">
+                <a href="#"><img class="link" src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img class="link" src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img class="link" src="instagram.png" alt="Instagram"></a>
+            </div>
+            <p>Quick Links</p>
+                <a href="#">Home |</a>
+                <a href="#">Menu |</a>
+                <a href="#">About Us |</a>
+                <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
